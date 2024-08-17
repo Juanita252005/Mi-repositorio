@@ -1,0 +1,359 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #4d3019;
+    line-height: 1.6;
+}
+
+/* Estilos del contenedor */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilos del encabezado */
+header {
+    position: fixed;
+    background: #020a06;
+    padding: 20px 0;
+    border-bottom: 2px solid #333;
+    width: 100%;
+    height: 20%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Estilos de los servicios */
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.service p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.videos {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 955px;
+}
+
+.videos:hover {
+    text-decoration: underline;
+}
+
+.videos::after {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+
+.service1 {
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+
+.service1 h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.service1 p {
+    font-size: 1.1em;
+}
+
+.service2 {
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+.service2 h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em; 
+}
+
+.service2 .btn-lg {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.service2 p {
+    font-size: 1.1em;
+}
+
+.service3 {
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+
+.service3 h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.service3 p {
+    font-size: 1.1em;
+}
+
+.service4 {
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+.service4 h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.service4 p {
+    font-size: 1.1em;
+}
+
+.service5 {
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+
+.service5 h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.service5 p {
+    font-size: 1.1em;
+}
+/* habilidades */
+
+.imgs img{
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+}
+
+.imgs .loght{
+    width: 85px;
+    height: 50px;
+}
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+form button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #ccc;
+    transform: scale(1.05);
+}
+
+.btn-Ig{
+    color: yellowgreen;
+}
+
+.btn-Ig img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.card-container {
+    perspective: 1000px;
+    /* For a subtle 3D effect on hover */
+}
+
+.card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 5px solid #303537;
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+.nombre {
+    color: white;
+    margin: 10px 0;
+}
+
+.grado .numero .correo {
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}

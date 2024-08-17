@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICK EN LIKE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body background="IMG/oscura.jpeg" background-size: cover; background-position: center; opacity: 0.7; Oscurece la foto
+ style="background-color: black;">
+    <div class="container">
+        <div id="videoContainer" class="row mt-4">
+            <!-- Video 1 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="Videos/Kingstone JUANITA.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Kingstone</h5>
+                        <p class="card-text"> Elaborado con los programas de adobe, manejando nuetros conocimientos.</p>
+                        <button class="btn btn-primary" onclick="Megusta('video1')">
+                            Me gusta <span id="gusta_video1">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video1')">
+                            No me gusta <span id="noGusta_video1">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./Videos/JUANITA_G.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title"> TRANSICIONES</h5>
+                        <p class="card-text">Elaborado con los programas de adobe, manejando nuetros conocimientos.</p>
+                        <button class="btn btn-primary" onclick="Megusta('video2')">
+                            Me gusta <span id="gusta_video2">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video2')">
+                            No me gusta <span id="noGusta_video2">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./Videos/EFECTOS ORIGINAL.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">EFECTOS ESPECIALES</h5>
+                        <p class="card-text">Elaborado con los programas de adobe, manejando nuetros conocimientos.</p>
+                        <button class="btn btn-primary" onclick="Megusta('video3')">
+                            Me gusta <span id="gusta_video3">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video3')">
+                            No me gusta <span id="noGusta_video3">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./Videos/sam2.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">DESPEDIDA SAMY</h5>
+                        <p class="card-text">Elaborado con los programas de adobe, manejando nuetros conocimientos.</p>
+                        <button class="btn btn-primary" onclick="Megusta('video4')">
+                            Me gusta <span id="gusta_video4">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video4')">
+                            No me gusta <span id="noGusta_video4">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./Videos/Teoría del color_ RGB.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">LA TEORIA DE LOS COLORES</h5>
+                        <p class="card-text">Elaborado con los programas de adobe, manejando nuetros conocimientos.</p>
+                        <button class="btn btn-primary" onclick="Megusta('video5')">
+                            Me gusta <span id="gusta_video5">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video5')">
+                            No me gusta <span id="noGusta_video5">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./Videos/WhatsApp Video 2024-05-10 at 10.11.58 AM.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">LOS ZAPATOS</h5>
+                        <p class="card-text">Elaborado con los programas de adobe, manejando nuetros conocimientos</p>
+                        <button class="btn btn-primary" onclick="Megusta('video6')">
+                            Me gusta <span id="gusta_video6">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video6')">
+                            No me gusta <span id="noGusta_video6">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async src="main.js"></script>
+</body>
+</body>
+</html>
