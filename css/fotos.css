@@ -270,11 +270,80 @@ body {
 /* footer */
 footer {
   background: #111;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile{
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.card-container-profile {
+  perspective: 1000px;
+  /* For a subtle 3D effect on hover */
+}
+
+.card-profile {
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.card-profile:hover {
+  transform: rotateY(10deg);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: 5px solid #303537;
+}
+
+.info-profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.nombre {
+  color: white;
+  margin: 10px 0;
+}
+
+.grado .numero .correo {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.social-icons {
   margin-top: 20px;
   display: flex;
-  text-align: center;
   justify-content: center;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  
+}
+
+.social-icons a {
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
