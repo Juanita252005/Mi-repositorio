@@ -1,24 +1,39 @@
 // Función para inicializar y mostrar los contadores de "Me gusta"
 const initAndShowLikes = (videoId) => {
-    let likes = localStorage.getItem(`like_${videoId}`);
-    if (!likes) {
-        likes = 0; // Solo inicializa en 0 si no hay valor previo
+    let likesElement = document.getElementById(`gusta_${videoId}`);
+    console.log(likesElement); // Agregar esto para depurar
+    if (likesElement) { // Solo proceder si el elemento existe
+        let likes = localStorage.getItem(`like_${videoId}`);
+        if (!likes) {
+            likes = 0;
+        } else {
+            likes = parseInt(likes);
+        }
+        likesElement.innerHTML = "(" + likes + ")";
     } else {
-        likes = parseInt(likes); // Asegúrate de convertir el valor a número
+        console.error(`Elemento gusta_${videoId} no encontrado`);
     }
-    document.getElementById(`gusta_${videoId}`).innerHTML = "(" + likes + ")";
 };
+
 
 // Función para inicializar y mostrar los contadores de "No me gusta"
 const initAndShowDislikes = (videoId) => {
+    let dislikesElement = document.getElementById(`noGusta_${videoId}`);
+    
+    if (!dislikesElement) {
+        console.error(`Elemento noGusta_${videoId} no encontrado`);
+        return;
+    }
+    
     let dislikes = localStorage.getItem(`dislike_${videoId}`);
     if (!dislikes) {
-        dislikes = 0; // Solo inicializa en 0 si no hay valor previo
+        dislikes = 0;
     } else {
-        dislikes = parseInt(dislikes); // Asegúrate de convertir el valor a número
+        dislikes = parseInt(dislikes);
     }
-    document.getElementById(`noGusta_${videoId}`).innerHTML = "(" + dislikes + ")";
+    dislikesElement.innerHTML = "(" + dislikes + ")";
 };
+
 
 
 // Función para manejar el click en "Me gusta"
@@ -39,10 +54,20 @@ const noMegusta = (videoId) => {
 
 // Función para mostrar los contadores iniciales cuando la página se carga
 document.addEventListener('DOMContentLoaded', function() {
-    const videoIds = ['video1', 'video2', 'video3', 'video4', 'video5', 'video6'];
+    const videoIds = ['video1', 'video2', 'video3', 'video4'];
     
     videoIds.forEach(videoId => {
         initAndShowLikes(videoId);
         initAndShowDislikes(videoId);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.getElementById('menu-icon');
+    var navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', function() {
+        navbar.classList.toggle('active');
     });
 });
